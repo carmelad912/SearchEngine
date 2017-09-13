@@ -1,0 +1,27 @@
+﻿<Window x:Class="SearchEngine.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SearchEngine"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500
+        " Width="700">
+    <Grid Margin="0,0,0,0">
+        <TextBox x:Name="load" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="395" Margin="121,98,0,0" TextChanged="load_TextChanged"/>
+        <TextBox x:Name="save" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="395" Margin="121,164,0,0" TextChanged="save_TextChanged"/>
+        <Button x:Name="loadb" Content="Browse" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="550,98,0,0" Height="29" Click="loadb_Click"/>
+        <Button x:Name="saveb" Content="Browse" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="550,164,0,0" Height="29" Click="saveb_Click"/>
+        <Label x:Name="label" Content="Load files from:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,98,0,0" Height="29" Width="142" Padding="0,5,5,5"/>
+        <Label x:Name="label_Copy" Content="Save files to:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,164,0,0" Height="28" Width="142" Padding="0,5,5,5"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="505,230,0,0" Width="120" Height="29" ItemsSource="{Binding P}"/>
+        <Label x:Name="label1" Content="Choose language:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="352,230,0,0" Height="29" Width="133"/>
+        <CheckBox x:Name="stemming" Content="Stemming" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,230,0,0" Height="29"  Padding="5,-1,0,5" ScrollViewer.CanContentScroll="True" UseLayoutRounding="False"/>
+        <Button x:Name="start" Content="Start" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="20,296,0,0" Height="38" Click="start_Click"/>
+        <Button x:Name="restart" Content="Restart" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="212,296,0,0" Height="38" Click="restart_Click"/>
+        <Button x:Name="display_dictionary" Content="Display&#xD;&#xA;Dictionary" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="404,296,0,0" Height="38" Click="display_dictionary_Click"/>
+        <Button x:Name="load_dictionary" Content="Load&#xD;&#xA;Dictionary" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="597,296,0,0" Height="38" Padding="1" Click="load_dictionary_Click"/>
+        <Image x:Name="image" Source="CarDar.jpg" HorizontalAlignment="Left" Height="86" VerticalAlignment="Top" Stretch="Fill" Width="325" Margin="183,10,0,0"/>
+
+    </Grid>
+</Window>
